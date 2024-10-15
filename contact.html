@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <div class="super">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="button-image">
+            <h2>Aravind Yesudas</h2>
+            <p>WEB DEVELOPER</p><div>
+        </section>
+
+        <section>
+            <form action="submit_form.php" method="post"> <!-- Change action to your form handling script -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Our Contact Information</h2>
+            <p>Email: <a href="mailto:info@example.com">aravindctk852@gmail.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">6282786170</a></p>
+            <p>Address: Aravindam kaitha south Chettikulangara p.o Mavelikara</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
