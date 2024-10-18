@@ -1,4 +1,4 @@
-/* General styles */
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +6,15 @@
   font-family: "Poppins", sans-serif;
 }
 
-.first {
-  color: #000;
+body {
+  background-color: #0a192f;
+  color: #e5e5e5;
 }
+
+p{
+    color: #fff;
+}
+/* Hero Section */
 .hero {
   position: relative;
   width: 100%;
@@ -19,17 +25,31 @@
   justify-content: space-between;
 }
 
+.hero1 {
+    background: #0a192f;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Navbar */
+
 nav {
-  width: 100%;
-  display: flex !important;
-  justify-content: space-between; /* Align logo left and nav right */
-  align-items: center;
-  padding: 20px 50px;
-  background: linear-gradient(to right, white 40%, #0a192f 40%);
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: linear-gradient(to right, white 40%, #0a192f 40%);
+    position: relative; 
+    z-index: 10; 
+    height: 80px; 
 }
 
 nav img.logo {
-  width: 80px; /* Adjust size of logo */
+  width: 80px;
   height: auto;
 }
 
@@ -37,10 +57,6 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
-}
-
-nav ul li {
-  list-style: none;
 }
 
 nav ul li a {
@@ -52,21 +68,20 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #f97316; /* Hover color */
+  color: #f97316;
 }
 
-/* Content Layout */
+/* Details Section (Text and Image) */
 .details {
   display: flex;
   align-items: center;
-  justify-content: space-around; /* Text left, image right */
+  justify-content: space-around;
   width: 100%;
   height: 100%;
 }
 
-/* Left-side details (Text part) */
 .detel {
-  width: 50%; /* Takes half of the width */
+  width: 50%;
   color: white;
 }
 
@@ -83,7 +98,7 @@ nav ul li a:hover {
 }
 
 span {
-  color: #f97316; /* Bright orange color */
+  color: #f97316;
   font-size: 50px;
   font-weight: 500;
 }
@@ -109,56 +124,144 @@ span {
   background-color: #ff6700;
 }
 
-/* Right-side image */
-/* .images {
-    width: 45%;
-    display: flex;
-    justify-content: flex-end; Align image to the right
-} */
-
+/* Image Styling */
 .images img {
-  width: 80%; /* Make the image smaller */
+  width: 80%;
   border-radius: 50%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
 .images:hover img {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05);
 }
 
-/* About Page */
-
-.hero1 {
-  background: #0a192f;
-  height: 100vh;
-  padding: 0 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* About Section */
+h5.play-bold {
+  color: #f97316;
 }
 
-p {
-  font-size: 22px;
+.lexend-display.list-bhide {
   color: #fff;
-  font-weight: 400;
 }
-.play-bold.mb-3 {
-  color: white;
+
+p.lexend-display {
+  text-align: center;
+  color: #000;
+}
+
+/* Project Styles */
+h5.lexend-display {
+  color: #f97316;
+}
+
+/* Skills and Certifications Section */
+.play-bold {
+  font-size: 2.5rem;
   font-weight: bold;
-  font-size: 36px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #f97316;
 }
 
-
-h5.play-bold{
-color: #F97316;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.lexend-display.list-bhide{
-    color: #fff;
+/* li {
+  margin-bottom: 20px;
+} */
+
+li strong {
+  font-size: 1.2rem;
+  color: #ffdd57;
 }
 
-p.lexend-display{
-    text-align: center;
-    color: #000;
+.playwrite-de-grund-display {
+  font-size: 1rem;
+  margin: 5px 0 15px 0;
+  color: #cbd5e1;
+}
+
+/* Section Spacing */
+section {
+  margin-bottom: 40px;
+}
+
+/* Horizontal Rule */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #1f2937;
+  margin: 40px 0;
+}
+
+/* List Item Hover Effect */
+li:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Certifications Styling */
+ul li.lexend-display {
+  font-size: 1.1rem;
+  background-color: #1e293b;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+ul li.lexend-display:hover {
+  background-color: #334155;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #0a192f;
+  color: #e5e5e5;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .play-bold {
+    font-size: 2rem;
+  }
+
+  li strong {
+    font-size: 1.1rem;
+  }
+
+  .playwrite-de-grund-display {
+    font-size: 0.9rem;
+  }
+
+  .detel h1 {
+    font-size: 2.5rem;
+  }
+
+  .detel h3 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  .hero1 {
+    padding: 0 20px;
+  }
 }
