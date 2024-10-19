@@ -4,53 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="css/custom/fonts.css" />
+    <link rel="stylesheet" href="css/layout/style.css" />
 </head>
+
 <body>
     <header>
-        <h1>Contact Us</h1>
-        <div class="super">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+        <nav>
+          <img src="./ay.jpg" class="logo" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </nav>
     </header>
 
-    <main>
+    <main class="hero1">
         <section>
             <div class="button-image">
-            <h2>Aravind Yesudas</h2>
-            <p>WEB DEVELOPER</p><div>
+                <h2 class="play-bold">Aravind Yesudas</h2>
+                <p class="playwrite-de-grund-display">WEB DEVELOPER</p>
+            </div>
         </section>
 
-        <section>
-            <form action="submit_form.php" method="post"> <!-- Change action to your form handling script -->
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+        <section id="contact-form">
+            <form action="submit_form.php" method="post">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-input" required><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" required><br>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <label for="message" class="form-label">Message:</label><br>
+                <textarea id="message" name="message" rows="4" class="form-textarea" required></textarea><br>
 
-                <button type="submit">Send Message</button>
+                <button type="submit" class="form-button">Send Message</button>
             </form>
         </section>
 
-        <section>
-            <h2>Our Contact Information</h2>
-            <p>Email: <a href="mailto:info@example.com">aravindctk852@gmail.com</a></p>
-            <p>Phone: <a href="tel:+1234567890">6282786170</a></p>
-            <p>Address: Aravindam kaitha south Chettikulangara p.o Mavelikara</p>
+        <section id="contact-info">
+            <h2 class="play-bold">Our Contact Information</h2>
+            <p>Email: <a href="mailto:aravindctk852@gmail.com" class="contact-link">aravindctk852@gmail.com</a></p>
+            <p>Phone: <a href="tel:+6282786170" class="contact-link">6282786170</a></p>
+            <p>Address: Aravindam Kaitha South, Chettikulangara P.O, Mavelikara</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <p>&copy; 2024 Aravind Yesudas. All rights reserved.</p>
     </footer>
 </body>
 </html>
